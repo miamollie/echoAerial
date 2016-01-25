@@ -1,0 +1,94 @@
+
+/*contact Button*/
+.contact-trigger {
+  position: fixed;
+  width: 110px;
+  height: 98px;
+  left: 0;
+  top: 90%;
+  cursor: pointer;
+  z-index: 200;
+
+  transform-origin: 110px 0px;
+  -webkit-transform-origin: 110px 0px;
+  -moz-transform-origin: 110px 0px;
+
+  transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+
+  transition: background 0.3s linear;
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+}
+
+
+.contactLine {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 8px;
+  background: #fff;
+  left: 15px;
+  bottom: 10px;
+
+  transform-origin: 0px 4px;
+  -webkit-transform-origin: 0px 4px;
+  -moz-transform-origin: 0px 4px;
+
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+}
+
+.contactLine:nth-child(1) {
+
+}
+.contactLine:nth-child(2) {
+  transform: rotate(-90deg) translateX(-34px) translateY(40px);
+  -webkit-transform: rotate(-90deg) translateX(-34px) translateY(40px);
+  -moz-transform: rotate(-90deg) translateX(-34px) translateY(40px);
+}
+
+.close .contactLine:nth-child(1) {
+  transform: translateY(26px) translateX(12px) rotate(-45deg);
+  -webkit-transform: translateY(26px) translateX(12px) rotate(-45deg);
+  -moz-transform: translateY(26px) translateX(12px) rotate(-45deg);
+}
+
+
+.close .contactLine:nth-child(2) {
+  transform: translateY(-38px) translateX(13px) rotate(45deg);
+  -webkit-transform: translateY(-38px) translateX(13px) rotate(45deg);
+  -moz-transform: translateY(-38px) translateX(13px) rotate(45deg);
+}
+
+/*Full page contactigation*/
+#contact {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  z-index: 150;
+  transition: background 0.7s ease-in;
+  -webkit-transition: background 0.7s ease-in;
+  -moz-transition: background 0.7s ease-in;
+
+}
+
+#contact.out {
+  pointer-events: none;
+  opacity: 0;
+}
+
+#contact.in {
+  background: #333;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+
+
+

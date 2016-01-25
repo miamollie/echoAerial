@@ -1,0 +1,137 @@
+
+/*Nav Button*/
+.nav-trigger {
+  position: fixed;
+  width: 110px;
+  height: 98px;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+  z-index: 200;
+
+  transform-origin: 110px 0px;
+  -webkit-transform-origin: 110px 0px;
+  -moz-transform-origin: 110px 0px;
+
+  transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+
+  transition: background 0.3s linear;
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+}
+
+
+.navLine {
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 8px;
+  background: #fff;
+  left: 15px;
+
+  transform-origin: 0px 4px;
+  -webkit-transform-origin: 0px 4px;
+  -moz-transform-origin: 0px 4px;
+
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+}
+
+.navLine:nth-child(1) {
+  top: 16px;
+}
+.navLine:nth-child(2) {
+  top: 32px;
+}
+
+.navLine:nth-child(3) {
+  top: 48px;
+}
+
+.close .navLine:nth-child(1) {
+  transform: translateY(11px) rotate(-45deg);
+  -webkit-transform: translateY(11px) rotate(-45deg);
+  -moz-transform: translateY(11px) rotate(-45deg);
+}
+
+.close .navLine:nth-child(2) {
+  opacity: 0;
+}
+
+.close .navLine:nth-child(3) {
+  transform: translateY(-11px) rotate(45deg);
+  -webkit-transform: translateY(-11px) rotate(45deg);
+  -moz-transform: translateY(-11px) rotate(45deg);
+}
+
+/*Full page Navigation*/
+nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+nav.out {
+  pointer-events: none;
+}
+
+nav.in {
+  background: #333;
+  pointer-events: auto;
+}
+
+nav ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+nav ul {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+nav li {
+  height: 20%;
+  position: relative;
+}
+
+
+nav.out li, nav.out li a {
+  opacity: 0;
+}
+
+nav.in li, nav.in li a {
+
+  opacity: 1;
+}
+
+nav span{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  height: 16px;
+  top: 50%;
+  margin-top: -8px;
+  text-transform: uppercase;
+}
+
+nav ul, nav li, nav{
+  transition: background 0.7s ease-in;
+  -webkit-transition: background 0.7s ease-in;
+  -moz-transition: background 0.7s ease-in;
+}
+
+nav a{
+  transition: opacity 0.7s ease-in;
+  -webkit-transition: opacity 0.7s ease-in;
+  -moz-transition: opacity 0.7s ease-in;
+}

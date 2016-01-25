@@ -1,0 +1,1 @@
+<!-- Eventually, add this to site as a sort of blog element listing news, events, performances, workshops etc, will be a holder page for NewsItem objects/pages. DOn't need to make this just yet -->
